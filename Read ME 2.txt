@@ -1,0 +1,21 @@
+guide
+! _-RunPythonScript "J:\\UK\\650012_60 Gracechurch Street\\003 Work Area\\03 Stage 02\\01 BIM\\02 Scripts\\RhinoPythonScripts\\SRF_guide_GuidePlaneFromCrv.py"
+
+wall 
+! _-RunPythonScript "J:\\UK\\650012_60 Gracechurch Street\\003 Work Area\\03 Stage 02\\01 BIM\\02 Scripts\\RhinoPythonScripts\\SRF_wall_LineLoftVertical.py"
+
+floor
+! _-RunPythonScript "J:\\UK\\650012_60 Gracechurch Street\\003 Work Area\\03 Stage 02\\01 BIM\\02 Scripts\\RhinoPythonScripts\\SRF_floor_LineLoftHorizontal.py"
+
+checkgeo
+! _-RunPythonScript "J:\\UK\\650012_60 Gracechurch Street\\003 Work Area\\03 Stage 02\\01 BIM\\02 Scripts\\RhinoPythonScripts\\GEO_Check.py"
+
+smartslice
+! _-RunPythonScript "J:\\UK\\650012_60 Gracechurch Street\\003 Work Area\\03 Stage 02\\01 BIM\\02 Scripts\\RhinoPythonScripts\\GEO_SL_CappedSlice.py"
+
+smartunion
+! _-RunPythonScript "J:\\UK\\650012_60 Gracechurch Street\\003 Work Area\\03 Stage 02\\01 BIM\\02 Scripts\\RhinoPythonScripts\\GEO_JJ_CleanUnion.py"
+
+trash
+! _-RunPythonScript "J:\\UK\\650012_60 Gracechurch Street\\003 Work Area\\03 Stage 02\\01 BIM\\02 Scripts\\RhinoPythonScripts\\LAYER_Trash.py"
+
