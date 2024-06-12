@@ -17,14 +17,16 @@ rs.AddAlias("ZS", "'_Zoom _Selected")
 rs.AddAlias("M", "'_Move")
 rs.AddAlias("E", "'_PushPull")
 rs.AddAlias("EC", "'_ExtrudeCrv")
+rs.AddAlias("ES", "'_ExtrudeSrf")
+rs.AddAlias("E", "'_Explode")
 rs.AddAlias("ESrf", "'_DupBorder _SelLast _PlanarSrf _SelPrev _Delete _SelLast")
 rs.AddAlias("P", "'_Planar")
 rs.AddAlias("PC", "'_ProjectToCPlane _Yes")
 rs.AddAlias("PS", "'_PlanarSrf _SelLast _MergeAllEdges")
 rs.AddAlias("J", "'_Join")
-rs.AddAlias("JJ", "'_Join _MergeAllEdges _MergeAllCoplanarFaces")
-rs.AddAlias("ES", "'_ExtrudeSrf")
-rs.AddAlias("E", "'_Explode")
+rs.AddAlias("JJ", "'_MergeAllCoplanarFaces")
+rs.AddAlias("JJJ", "'_MergeAllEdges")
+
 
 # Boolean Commands
 rs.AddAlias("BS", "'_BooleanSplit")
@@ -34,10 +36,13 @@ rs.AddAlias("BD", "'_BooleanDifference")
 # -----
 
 # Add keyboard shortcuts for view commands
-rs.Command("'_OptionsPage _Keyboard")
-rs.AddShortcut("Ctrl+D", "'_CPlane '_Object")
-rs.AddShortcut("Ctrl+1", "'_CPlane '_World _Top")
-rs.AddShortcut("Ctrl+2", "'_CPlane '_World _Front")
-rs.AddShortcut("Ctrl+3", "'_CPlane '_World _Right")
-rs.AddShortcut("Ctrl+4", "'_CPlane '_World _Back")
-rs.AddShortcut("Ctrl+5", "'_CPlane '_World _Left")
+# This command might require manual entry if the RhinoScript API does not support direct shortcut bindings.
+# Use this as a guide for setting up shortcuts manually.
+
+rs.Command("'_OptionsPage '_Keyboard")
+rs.Command("'_OptionsPage '_Keyboard '_NewShortcut Ctrl+D '_Macro ''_CPlane '_Object")
+rs.Command("'_OptionsPage '_Keyboard '_NewShortcut Ctrl+1 '_Macro ''_CPlane '_World '_Top")
+rs.Command("'_OptionsPage '_Keyboard '_NewShortcut Ctrl+2 '_Macro ''_CPlane '_World '_Front")
+rs.Command("'_OptionsPage '_Keyboard '_NewShortcut Ctrl+3 '_Macro ''_CPlane '_World '_Right")
+rs.Command("'_OptionsPage '_Keyboard '_NewShortcut Ctrl+4 '_Macro ''_CPlane '_World '_Back")
+rs.Command("'_OptionsPage '_Keyboard '_NewShortcut Ctrl+5 '_Macro ''_CPlane '_World '_Left")
