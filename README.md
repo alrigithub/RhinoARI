@@ -1,5 +1,5 @@
-#Alias
-## Line Commands
+## Alias
+### Line Commands
 
 | Alias      | Macro                          |
 |------------|--------------------------------|
@@ -8,19 +8,19 @@
 | TR         | '_Connect                      |
 | TT         | '_Trim                         |
 
-## View Commands
+### View Commands
 
-| Alias      | Macro                          |
-|------------|--------------------------------|
-| H          | '_Hide                         |
-| HI         | '_Isolate                      |
-| LO         | '_OneLayerOff                  |
-| O          | '_Ortho                        |
-| objectplane| '_CPlane _Object               |
-| WW         | '_CPlane _World _Top           |
-| ZS         | '_Zoom _Selected               |
+| Alias      | Macro                          | Shortcut                          |
+|------------|--------------------------------|                   |
+| H          | '_Hide                         |                   |
+| HI         | '_Isolate                      |                   |
+| LO         | '_OneLayerOff                  |                   |
+| O          | '_Ortho                        |                   |
+| objectplane| '_CPlane _Object               | Ctrl + D                   |
+| WW         | '_CPlane _World _Top           |                   |
+| ZS         | '_Zoom _Selected               |                   |
 
-## Transform Commands
+### Transform Commands
 
 | Alias      | Macro                          |
 |------------|--------------------------------|
@@ -31,6 +31,8 @@
 | P          | '_Planar                       |
 | PC         | '_ProjectToCPlane _Yes         |
 | PS         | '_PlanarSrf '_SelLast '_MergeAllEdges |
+| J         | '_Join  |
+| JJ         | '_Join '_Join '_Join  |
 
 #Shortcuts
 
